@@ -423,6 +423,7 @@ module OmniAuth
 
         URI.encode_www_form(
           post_logout_redirect_uri: options.post_logout_redirect_uri
+		  id_token_hint: access_token.id_token
         )
       end
 
